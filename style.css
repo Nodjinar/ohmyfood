@@ -1,0 +1,215 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+/*c'est la base*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  padding: 0.7rem;
+}
+
+header {
+  font-family: "shrikhand", cursive;
+  text-align: center;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  padding: 0.5rem;
+  position: relative;
+}
+
+.city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 0.5rem;
+}
+.city i {
+  font-size: 1.5rem;
+}
+
+.explorer {
+  text-align: center;
+}
+.explorer h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.explorer p {
+  font-size: 1rem;
+}
+.explorer button {
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  border-radius: 2rem;
+  transition: transform 200ms;
+  box-shadow: 2px 1px 16px -3px rgba(0, 0, 0, 0);
+}
+.explorer button :hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.tuto ol {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 800px) {
+  .tuto ol {
+    flex-direction: column;
+  }
+}
+.tuto li {
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 1rem 2rem;
+  flex-grow: 1;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 16px -3px rgba(0, 0, 0, 0);
+}
+.tuto li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: white;
+  background-color: purple;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  left: -1rem;
+  position: absolute;
+  bottom: 1.5rem;
+  transform: translatey(50%);
+}
+.tuto li:hover {
+  transform: scale(1.02é .tuto li:hover);
+}
+.tuto li i {
+  color: blue;
+}
+
+.menus {
+  background-color: #f6f6f6;
+  height: 25rem;
+}
+.menus h2 {
+  margin-bottom: 2rem;
+}
+.menus .menus_card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  height: 7rem;
+}
+@media (max-width: 767) {
+  .menus .menus_card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.menus .card {
+  border: 1px solid rgb(206, 21, 21);
+  height: 8rem;
+  flex-grow: 1;
+}
+.menus .card .card_image {
+  background-image: url("../..assets/menu-1.jpg");
+  height: 15rem;
+}
+
+ol {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: rap;
+  width: 100%;
+}
+
+.tuto i {
+  display: inline;
+}
+
+li {
+  position: relative;
+  list-style-type: none;
+  background-color: #f6f6f6;
+  padding: 1rem 2rem;
+  flex-grow: 1;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 16px -3px rgba(0, 0, 0, 0);
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+i {
+  color: blue;
+  margin-right: 1rem;
+}
+
+.tuto li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: white;
+  background-color: purple;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  left: -1rem;
+  position: absolute;
+  bottom: 1.5rem;
+  transform: translatey(50%);
+}
+
+/* Les menus*/
+.menus {
+  background-color: #f6f6f6;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+.card {
+  border: 1px solid black;
+  width: 10rem;
+  flex-grow: 1;
+  min-width: 30rem;
+  background-image: url("../../images/images1.jpg");
+  height: 16rem;
+  border-radius: 20px;
+}
+
+.menus_card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  height: 7rem;
+}
+
+.card_image {
+  width: 300px;
+  height: auto;
+}
+
+.new {
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=style.css.map */

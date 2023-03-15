@@ -1,0 +1,44 @@
+@import "../layout/utils/box-shadow.scss";
+@import "../layout/utils/zoom.scss";
+
+.tuto{
+    & ol {
+        display: flex;
+        flex-wrap: wrap;
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
+
+    }
+    & li {
+        position: relative;
+        &::before {
+        content: counter(steps);
+        counter-increment: steps;
+        color: white;
+        background-color: purple;
+        width: 2rem;
+        height: 2rem;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        left: -1rem;
+        position: absolute;
+        bottom: 1.5rem;
+        transform: translatey(50%);
+      }
+      
+    
+        background-color: #f6f6f6;
+        padding: 1rem 2rem;
+        flex-grow: 1;
+        border-radius: 1rem;
+        @include base-shadow;
+        &:hover {
+        @include zoom;
+        }
+        & i {
+            color: blue;
+        }
+    }
+}
