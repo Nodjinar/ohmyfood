@@ -4,7 +4,7 @@
 @import "../sass/layout/explorer";
 @import "../sass/layout/tuto";
 @import "../sass/layout/menus.scss";
-
+@import "../sass/layout/footer.scss";
 
  ol {
     display: flex;
@@ -62,12 +62,10 @@ h2 {
     margin-bottom: 2rem;
 }
 .card {
-    border: 1px solid black; 
     width: 10rem;
     flex-grow: 1;
     min-width: 30rem;
     background-image: url("../../images/images1.jpg");
-    height: 16rem;
     border-radius: 20px;
     
 }
@@ -84,8 +82,6 @@ h2 {
     height: auto;
 }
 
-.new {
-    border: 1px solid red;
-}
+
  
 
