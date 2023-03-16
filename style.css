@@ -187,12 +187,10 @@ h2 {
 }
 
 .card {
-  border: 1px solid black;
   width: 10rem;
   flex-grow: 1;
   min-width: 30rem;
   background-image: url("../../images/images1.jpg");
-  height: 16rem;
   border-radius: 20px;
 }
 
