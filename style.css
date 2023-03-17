@@ -39,6 +39,10 @@ header {
   position: relative;
 }
 
+main {
+  padding: 0;
+}
+
 .city {
   display: flex;
   align-items: center;
@@ -71,7 +75,6 @@ header {
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   border-radius: 2rem;
   transition: transform 200ms;
-  box-shadow: 2px 1px 16px -3px rgba(0, 0, 0, 0);
 }
 .explorer button :hover {
   transform: scale(1.02);
@@ -80,6 +83,7 @@ header {
 
 .tuto ol {
   display: flex;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 @media (max-width: 800px) {
@@ -93,7 +97,6 @@ header {
   padding: 1rem 2rem;
   flex-grow: 1;
   border-radius: 1rem;
-  box-shadow: 2px 1px 16px -3px rgba(0, 0, 0, 0);
 }
 .tuto li::before {
   content: counter(steps);
@@ -124,24 +127,24 @@ header {
 .menus h2 {
   margin-bottom: 2rem;
   padding: 2rem;
-  margin: 0;
+  margin: 1rem;
 }
-.menus .menus_card {
+
+.menus_card {
   display: grid;
   padding: 3rem;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  height: 7rem;
 }
 @media (max-width: 800px) {
-  .menus .menus_card {
+  .menus_card {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.menus .menus_card .new {
+.menus_card .new {
   position: relative;
 }
-.menus .menus_card .new::before {
+.menus_card .new::before {
   content: " Nouveau";
   position: absolute;
   height: 2rem;
@@ -152,124 +155,87 @@ header {
   right: 1rem;
   top: 1rem;
 }
-.menus .card {
+
+.card {
   border: 1px solid lightgrey;
+  border-radius: 20px;
 }
-.menus .card_image1 {
+.card_image1 {
   background-image: url("./images/menu-1.jpg.jpg");
   height: 12rem;
   background-size: cover;
   border-radius: 20px 20px 0 0;
 }
-.menus .card_image2 {
+.card_image2 {
   background-image: url("./images/menu-2.jpg.jpg");
   height: 12rem;
   background-size: cover;
   border-radius: 20px 20px 0 0;
 }
-.menus .card_image3 {
+.card_image3 {
   background-image: url("./images/menu-3.jpg.jpg");
   height: 12rem;
   background-size: cover;
   border-radius: 20px 20px 0 0;
 }
-.menus .card_image4 {
+.card_image4 {
   background-image: url("./images/menu-4.jpg.jpg");
   height: 12rem;
   background-size: cover;
   border-radius: 20px 20px 0 0;
 }
-.menus .card_description {
+.card_description {
   position: relative;
+  background-color: white;
 }
-.menus .card_description h3,
-.menus .card_description p {
+.card_description::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "font awesome 5 free";
+  font-weight: 900;
+  content: "\f004";
+}
+.card_description h3,
+.card_description p {
   margin: 0.5rem;
 }
-.menus .card_description p {
+.card_description p {
   padding-top: 0.5rem;
 }
-.menus .card_description i {
+.card_description i {
   font-size: 2rem;
   position: absolute;
   right: 1rem;
   top: 90%;
   transform: translateY(-50%);
 }
+.card_description .fa-heart {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+}
+.card_description:hover .fa-heart {
+  opacity: 1;
+  transform: scale(1.2);
+}
 
-ol {
+.foot {
   display: flex;
-  gap: 2rem;
-  flex-wrap: rap;
-  width: 100%;
-}
-
-.tuto i {
-  display: inline;
-}
-
-li {
-  position: relative;
-  list-style-type: none;
-  background-color: #f6f6f6;
-  padding: 1rem 2rem;
-  flex-grow: 1;
-  border-radius: 1rem;
-  box-shadow: 2px 1px 16px -3px rgba(0, 0, 0, 0);
-}
-
-li:hover {
-  transform: scale(1.02);
-}
-
-i {
-  color: blue;
-  margin-right: 1rem;
-}
-
-.tuto li::before {
-  content: counter(steps);
-  counter-increment: steps;
+  background-color: grey;
+  padding: 2rem;
   color: white;
-  background-color: purple;
-  width: 2rem;
-  height: 2rem;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  left: -1rem;
-  position: absolute;
-  bottom: 1.5rem;
-  transform: translatey(50%);
+  margin-top: 3rem;
+  flex-direction: column;
 }
-
-/* Les menus*/
-.menus {
-  background-color: #f6f6f6;
-}
-
-h2 {
-  margin-bottom: 2rem;
-}
-
-.card {
-  width: 10rem;
-  flex-grow: 1;
-  min-width: 30rem;
-  background-image: url("../../images/images1.jpg");
-  border-radius: 20px;
-}
-
-.menus_card {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  height: 7rem;
-}
-
-.card_image {
-  width: 300px;
-  height: auto;
+.foot h2 {
+  font-family: "shrikhand", "sans-serif";
+  font-weight: 500px;
 }
 
 /*# sourceMappingURL=style.css.map */

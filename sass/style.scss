@@ -1,86 +1,10 @@
-@import "../sass/sass/base.scss";
-@import "../sass/layout/header.scss";
-@import "../sass/layout/city.scss";
-@import "../sass/layout/explorer";
-@import "../sass/layout/tuto";
-@import "../sass/layout/menus.scss";
-@import "../sass/layout/footer.scss";
-
- ol {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: rap;
-    width: 100%;
-
- }
- 
- .tuto i {
-    
-    display: inline;
-
- }
- li {
-    position: relative;
-    list-style-type: none;
-    background-color: #f6f6f6;
-    padding: 1rem 2rem;
-    flex-grow: 1;
-    border-radius: 1rem;
-    box-shadow: 2px 1px 16px -3px #00000000;
-}
-li:hover {
-    transform: scale(1.02);
-}
-
-i {
-    color: blue;
-    margin-right: 1rem;
-}
-.tuto li::before{
-    content: counter(steps);
-    counter-increment: steps;
-    color: white;
-    background-color: purple;
-    width: 2rem;
-    height: 2rem;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    left: -1rem;
-    position: absolute;
-    bottom: 1.5rem ;
-    transform: translatey(50%);
-
-}
-
-/* Les menus*/
-.menus {
-    background-color:#f6f6f6;
-    
-}
-h2 {
-    margin-bottom: 2rem;
-}
-.card {
-    width: 10rem;
-    flex-grow: 1;
-    min-width: 30rem;
-    background-image: url("../../images/images1.jpg");
-    border-radius: 20px;
-    
-}
-
-.menus_card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    height: 7rem;
-
-}
-.card_image {
-    width: 300px;
-    height: auto;
-}
+@import "./base/base.scss";
+@import "./layout/header.scss";
+@import "./layout/city.scss";
+@import "./layout/explorer";
+@import "./layout/tuto";
+@import "./layout/menus.scss";
+@import "./layout/footer.scss";
 
 
  
