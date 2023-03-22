@@ -33,6 +33,20 @@ body {
     @media (max-width: 1000px) {
         grid-template-columns: 1fr;
     }
+    h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 1.5rem;
+            left: 0;
+            height: 0.25rem;
+            width: 3rem;
+            color: red;
+        }
+    }
     .menus__category {
 
         background-color: white;
@@ -80,7 +94,6 @@ body {
                 margin-right: 0;
             }
             i {
-               
                 animation: quarter-spin 1s ease-in-out;
             }
         }
@@ -96,5 +109,33 @@ body {
        transform: rotate(0);
       }
    }
+   section.order {
+    height: 10vh;
+    display: grid;
+    place-items: center;
+   }
+   .order button {
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9 ) );
+    border-radius: 2rem;
+    transition: transform 200ms;
+    margin-top: 1rem;
+    cursor: pointer;
+  
+   }
+   .order button :hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+ }
+ .arrow {
+    margin-left: -2rem;
+ }
+
+
+
 
 
