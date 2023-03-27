@@ -332,6 +332,7 @@ img {
   color: red;
 }
 .menus-grid .menus__category {
+  overflow: hidden;
   background-color: white;
   border-radius: 1rem;
 }
@@ -342,26 +343,25 @@ img {
   filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, 0));
 }
 .menus-grid .menus__category .menu-item .menu-item__price {
-  padding: 2rem;
+  padding: 3rem;
   margin-left: auto;
   font-weight: 900;
   align-items: flex-end;
 }
-.menus-grid .menus__category .menu-item > * {
-  padding: -2rem;
-}
 .menus-grid .menus__category .menu-item .menu-item__check {
-  display: grid;
+  display: flex;
   place-items: center;
-  margin-right: -2rem;
+  margin-right: -3rem;
+  height: 7rem;
   background-color: aqua;
   transition: all 1s;
+  border-radius: 1 1.5rem;
 }
 .menus-grid .menus__category .menu-item .menu-item__check i {
-  display: grid;
+  display: flex;
   place-items: center;
   background: white;
-  aspect-ratio: -2;
+  aspect-ratio: 1;
   width: 2rem;
   border-radius: 1rem;
 }

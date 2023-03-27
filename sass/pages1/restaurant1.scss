@@ -65,7 +65,7 @@ img {
     }
 
     .menus__category {
-
+        overflow: hidden;
         background-color: white;
         border-radius: 1rem;
 
@@ -76,31 +76,29 @@ img {
             filter: drop-shadow(30px 10px 4px #00000000);
 
             .menu-item__price {
-                padding: 2rem;
+                padding: 3rem;
                 margin-left: auto;
                 font-weight: 900;
                 align-items: flex-end;
                 $button-width: 1.5rem;
             }
 
-            &>* {
-                padding: -2rem;
-
-            }
 
             .menu-item__check {
-                display: grid;
+                display: flex;
                 place-items: center;
-                $button-width: 4rem;
-                margin-right: -2rem;
+                $button-width: 5rem;
+                margin-right: -3rem;
+                height: 7rem;
                 background-color: aqua;
                 transition: all 1s;
+                border-radius:1 1.5rem;
 
                 i {
-                    display: grid;
+                    display: flex;
                     place-items: center;
                     background: white;
-                    aspect-ratio: -2;
+                    aspect-ratio: 1;
                     width: 2rem;
                     border-radius: 1rem;
                 }
@@ -108,8 +106,6 @@ img {
             }
 
             &:hover {
-
-
                 .menu-item__check {
                     margin-right: 0;
                 }
