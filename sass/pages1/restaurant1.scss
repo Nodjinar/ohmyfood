@@ -4,6 +4,20 @@
 body {
     background-color: lightgrey;
 }
+.arrow i {
+    display: flex;
+    justify-content: flex-start;
+    transform: translateY(250%);
+    font-size: 20px;
+   
+
+    i {
+    margin: 3rem;
+    right: 2rem; 
+    top: 50%;
+    }
+
+}
 
 img {
     width: 100%;
@@ -153,16 +167,5 @@ img {
         opacity: 0.9;
     }
 
-    .arrow i {
-        display: grid;
-        justify-content: flex-start;
-
-        i {
-        margin: 3rem;
-        left: 0;
-
-            
-        }
-
-    }
+    
 }

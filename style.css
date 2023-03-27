@@ -278,6 +278,18 @@ body {
   background-color: lightgrey;
 }
 
+.arrow i {
+  display: flex;
+  justify-content: flex-start;
+  transform: translateY(250%);
+  font-size: 20px;
+}
+.arrow i i {
+  margin: 3rem;
+  right: 2rem;
+  top: 50%;
+}
+
 img {
   width: 100%;
   height: 70vh;
@@ -399,54 +411,6 @@ img {
 .menus-grid .order button :hover {
   transform: scale(1.02);
   opacity: 0.9;
-}
-.menus-grid .arrow i {
-  display: grid;
-  justify-content: flex-start;
-}
-.menus-grid .arrow i i {
-  margin: 3rem;
-  left: 0;
-}
-
-body {
-  background-color: lightgrey;
-}
-
-section.order {
-  height: 10vh;
-  display: grid;
-  place-items: center;
-}
-
-.order button {
-  color: white;
-  font-weight: 300;
-  font-size: 1.5rem;
-  padding: 1rem 2rem;
-  border: none;
-  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  border-radius: 2rem;
-  transition: transform 200ms;
-  margin-top: 1rem;
-  cursor: pointer;
-}
-
-.order button :hover {
-  transform: scale(1.02);
-  opacity: 0.9;
-}
-
-.arrow i {
-  display: grid;
-  justify-content: flex-start;
-}
-.arrow i i {
-  margin: 2rem;
-}
-
-body {
-  background-color: lightgrey;
 }
 
 /*# sourceMappingURL=style.css.map */
