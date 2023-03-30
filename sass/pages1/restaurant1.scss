@@ -82,12 +82,22 @@ img {
         overflow: hidden;
         background-color: white;
         border-radius: 1rem;
-
+       
+       
         .menu-item {
+            @for $i from 1 through 3{
+                &:nth-child(#{$i}) {
+                    animation-delay: 100ms
+                    * $i;
+                }
+            }
             display: flex;
             white-space: nowrap;
             align-items: center;
             filter: drop-shadow(30px 10px 4px #00000000);
+            animation: appear 3s ;
+            transform: scale(1);
+        
 
             .menu-item__price {
                 padding: 3rem;
@@ -130,8 +140,14 @@ img {
             }
         }
     }
-
-
+    @keyframes appear {
+        0% {
+           transform: scale(0);
+        }
+        100% {
+           transform: scale(1);
+        }
+    }
     @keyframes quarter-spin {
         0% {
             transform: rotate(-270deg);
@@ -168,4 +184,4 @@ img {
     }
 
     
-}
+}   
