@@ -91,13 +91,15 @@ img {
                     * $i;
                 }
             }
+        
             display: flex;
             white-space: nowrap;
             align-items: center;
             filter: drop-shadow(30px 10px 4px #00000000);
             animation: appear 3s ;
             transform: scale(1);
-        
+            animation: appear 3s;
+            animation-fill-mode: both;
 
             .menu-item__price {
                 padding: 3rem;

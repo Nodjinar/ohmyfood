@@ -93,7 +93,7 @@ main {
   opacity: 0.9;
   animation: disappear 200ms 3s;
   animation-fill-mode: forwards;
-  animation-delay: 5s;
+  animation-delay: 3s;
   transform-origin: top;
 }
 .loader::after {
@@ -101,7 +101,6 @@ main {
   height: 100px;
   width: 100px;
   border: 5px solid transparent;
-  border-top: 5px solid blue;
   border-radius: 50%;
   animation: spin 3s infinite linear;
 }
@@ -243,7 +242,6 @@ main {
 }
 #homepage .card_description:hover .fa-heart {
   opacity: 1;
-  transform: scale(1.2);
 }
 
 .foot {
@@ -387,6 +385,8 @@ img {
   filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, 0));
   animation: appear 3s;
   transform: scale(1);
+  animation: appear 3s;
+  animation-fill-mode: both;
 }
 .menus-grid .menus__category .menu-item:nth-child(1) {
   animation-delay: 100ms;

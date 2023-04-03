@@ -39,14 +39,14 @@
     opacity: 0.9;
     animation: disappear 200ms $animation-duration ;
     animation-fill-mode: forwards;
-    animation-delay: 5s;
+    animation-delay: 3s;
     transform-origin: top;
     &::after {
         content: "";
         height: 100px;
         width: 100px;
         border: 5px solid transparent;
-        border-top: 5px solid blue;
+        
         border-radius: 50%;
         animation: spin $animation-duration infinite linear;
     }
